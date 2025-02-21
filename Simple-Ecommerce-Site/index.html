@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Ray Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Golden Ray Jewelry</h2>
+            <nav>
+                <ul>
+                    <li><a href="#home" id="home-nav">Home</a></li>
+                    <li><a href="#products" id="products-nav">Jewelry</a></li>
+                    <li><a href="#cart" id="cart-nav">Cart</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <!-- Home Section -->
+            <section id="home" style="display: block;">
+                <div class="home-content">
+                    <h1>Discover Timeless Elegance</h1>
+                    <p>Luxury jewelry designed to shine with you.</p>
+                    <button class="shop-btn">SHOP NOW</button>
+                </div>
+            </section>
+
+            <!-- Jewelry Section -->
+            <section id="products" style="display: none;">
+                <h2 class="section-title">Our Collection</h2>
+                <div class="product-content">
+                    <div class="product-card" data-product-id="product1">
+                        <img src="image/sapphire 2.jpg" alt="Sapphire Silver Earrings">
+                        <h3>Sapphire Silver Earrings</h3>
+                        <p class="price">&#8369;4,599.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-product-id="product2">
+                        <img src="image/gold2.jpg" alt="Gold Engagement Ring">
+                        <h3>Gold Engagement Ring</h3>
+                        <p class="price">&#8369;15,999.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-product-id="product3">
+                        <img src="image/pearl.jpg" alt="Pearl Necklace">
+                        <h3>Pearl Necklace</h3>
+                        <p class="price">&#8369;7,499.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card" data-product-id="product4">
+                        <img src="image/golden charm.jpg" alt="Golden Charm Bracelet">
+                        <h3>Golden Charm Bracelet</h3>
+                        <p class="price">&#8369;5,999.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cart Section -->
+            <section id="cart" style="display: none;">
+                <h2 class="section-title">Your Cart</h2>
+                <div class="product-content cart-content">
+
+                </div>
+                <div class="cart-total">
+                    Total: &#8369;0.00
+                </div>
+            </section>
+        </main>
+
+        <!-- Pop Up Modal When Adding to cart -->
+        <div class="popup-container">
+            <div class="pop-up">
+                <i class='bx bx-check'></i>
+                <h2>Thank You!</h2>
+                <p>The jewelry piece has been added to your cart.</p>
+                <button onclick="close_popup()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
